@@ -128,7 +128,7 @@ if page == "🏠 Home":
         "Choose a model:",
         (
             "🔽 Select a model",
-            "📊 Food Review Sentiment Analysis",
+            "🍽️ Food Review Sentiment Analysis",
             "📰 News Classifier",
             "✉️ Spam Classifier",
             "🌐 Language Detection"
