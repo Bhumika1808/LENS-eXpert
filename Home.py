@@ -123,24 +123,12 @@ if page == "🏠 Home":
         </h1>
     """, unsafe_allow_html=True)
 
-    st.markdown("""
-        <style>
-        .custom-h3 {
-            font-family: sans-serif;
-            font-size: 1.5em;  /* Optional: tweak size */
-            color: #ffffff;
-        }
-        </style>
-
-        <h3 class="custom-h3">What would you like to do?</h3>
-    """, unsafe_allow_html=True)
-
 
     model_option = st.selectbox(
         "Choose a model:",
         (
             "🔽 Select a model",
-            "📊 Restaurant Sentiment Analysis",
+            "📊 Food Review Sentiment Analysis",
             "📰 News Classifier",
             "✉️ Spam Classifier",
             "🌐 Language Detection"
@@ -149,7 +137,7 @@ if page == "🏠 Home":
 
     if model_option != "🔽 Select a model":
         if st.button("Continue"):
-            if model_option == "🍽️ Restaurant Sentiment Analysis":
+            if model_option == "🍽️ Food Review Sentiment Analysis":
                 st.switch_page("pages/Review_model.py")
             elif model_option == "📰 News Classifier":
                 st.switch_page("pages/News_model.py")
