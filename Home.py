@@ -55,20 +55,20 @@ set_bg_from_local("bg1.jpg")  # Replace with your actual file name
 #dropdown color
 st.markdown("""
     <style>
-    /* Change background of the selectbox */
+
     div[data-baseweb="select"] {
         background-color: black !important;
         color: white !important;
         border-radius: 8px;
     }
 
-    /* Style the dropdown options */
+
     div[data-baseweb="select"] * {
         background-color: black !important;
         color: white !important;
     }
 
-    /* Optional: Style label above the dropdown */
+
     label {
         color: white !important;
     }
@@ -150,13 +150,13 @@ if page == "🏠 Home":
     if model_option != "🔽 Select a model":
         if st.button("Continue"):
             if model_option == "🍽️ Restaurant Sentiment Analysis":
-                st.switch_page("LensX/pages/Review_model.py")
+                st.switch_page("pages/Review_model.py")
             elif model_option == "📰 News Classifier":
-                st.switch_page("LensX/pages/News_model.py")
+                st.switch_page("pages/News_model.py")
             elif model_option == "✉️ Spam Classifier":
-                st.switch_page("LensX/pages/Spam_model.py")
+                st.switch_page("pages/Spam_model.py")
             elif model_option == "🌐 Language Detection":
-                st.switch_page("Lens/pages/Language_model.py")
+                st.switch_page("pages/Language_model.py")
 
 
 
